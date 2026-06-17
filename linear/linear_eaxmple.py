@@ -24,7 +24,7 @@ def train_model(x,y):
     return model
 
 def predict(model,x,y):
-    #均方差(the mean squared orrer)
+    #均方差(the mean squared error)
     mse = np.mean((model.predict(x)-y)**2)
     #决定系数
     score = model.score(x,y)
